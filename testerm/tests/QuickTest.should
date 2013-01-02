@@ -1,0 +1,14 @@
+var should = chai.should();
+
+describe("A Quiz", function(){
+  it("should have a default score of 0", function(){
+    var quiz = new Quiz;
+    quiz.score.should.equal(0);
+  });
+
+  it("should have a title", function(){
+    var quiz = new Quiz('My Quiz test');
+    //expect(quiz.title).toBeDefined();
+    quiz.title.should.be.ok;
+  })
+});
